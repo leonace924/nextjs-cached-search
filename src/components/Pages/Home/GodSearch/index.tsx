@@ -29,7 +29,7 @@ export const GodSearch = () => {
   return (
     <View>
       <SearchBar handleSubmit={handleSubmit} />
-      <GodList data={data.ancients ?? data} />
+      <GodList data={data.ancients ?? data} isFetched={status === 'fetched'} />
     </View>
   );
 };
