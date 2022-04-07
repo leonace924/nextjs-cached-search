@@ -18,7 +18,9 @@ export const Layout = ({
         <meta name="Description" content="Nextjs Cached Search" />
       </Head>
 
-      <main className="flex flex-col flex-1 h-full">{children}</main>
+      <main className="flex flex-col flex-1 h-full min-h-screen bg-light-primary">
+        {children}
+      </main>
 
       <footer></footer>
     </>
