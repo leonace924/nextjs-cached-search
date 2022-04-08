@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 type LayoutProps = {
   title?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export const Layout = ({
