@@ -18,6 +18,13 @@ yarn install
 yarn dev
 ```
 
+Launch the test runner.
+
+```
+# test
+yarn test
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Deploy on Vercel
