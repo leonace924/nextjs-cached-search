@@ -1,7 +1,8 @@
+import { NextPage } from 'next';
 import { Layout, Title, View } from '@components/Common';
 import { ErrorView, GodSearch } from '@components/Pages/Home';
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <Layout>
       <View className="container px-4 py-12 mx-auto lg:px-8 lg:py-20">
