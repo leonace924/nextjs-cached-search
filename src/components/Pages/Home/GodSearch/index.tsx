@@ -13,12 +13,11 @@ export const GodSearch = () => {
     e.preventDefault();
 
     const query = e.target.search.value;
-    if (!query) return;
     setQuery(query);
   }, []);
 
   useEffect(() => {
-    setApiUrl(`${BASE_URL}?search=${query}`);
+    setApiUrl(`${BASE_URL}${query ? `?search=${query}` : ''}`);
   }, [query]);
 
   const { status, data, error } = useFetch(apiUrl);
