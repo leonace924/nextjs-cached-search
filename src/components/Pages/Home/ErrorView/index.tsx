@@ -18,9 +18,11 @@ export const ErrorView = () => {
 
   return (
     <View>
-      <Title className="mt-6 mb-2 text-xl font-medium text-primary lg:mt-9 lg:text-2xl">
-        Error Endpoint message
-      </Title>
+      {status === 'fetched' && (
+        <Title className="mt-6 mb-2 text-xl font-medium text-primary lg:mt-9 lg:text-2xl">
+          Error Endpoint message
+        </Title>
+      )}
       <Paragraph>{data?.error}</Paragraph>
     </View>
   );
