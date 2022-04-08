@@ -9,7 +9,7 @@ export const GodSearch = () => {
   const [query, setQuery] = useState('');
   const [apiUrl, setApiUrl] = useState('');
 
-  const handleSubmit = useCallback((e) => {
+  const handleSubmit = useCallback((e: any) => {
     e.preventDefault();
 
     const query = e.target.search.value;
