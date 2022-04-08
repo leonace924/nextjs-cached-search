@@ -9,11 +9,13 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-  "plugins": ["testing-library", "import"],
+  "plugins": ["testing-library", "import", "react-hooks"],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "@next/next/no-img-element": "off",
     "jsx-a11y/alt-text": "off",
-    "no-return-await": "warn"
+    "no-return-await": "warn",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
   }
 }
