@@ -14,7 +14,7 @@ export const ErrorView = () => {
   const { status, data, error } = useFetch(apiUrl);
 
   if (error) return <Text>{error}</Text>;
-  if (status === 'loading') return <Loading />;
+  if (status === 'fetching') return <Loading />;
 
   return (
     <View>
